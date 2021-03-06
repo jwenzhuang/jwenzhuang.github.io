@@ -2,7 +2,7 @@
 
 [Full text also available here.](https://www.chronicle.com/article/the-case-for-tuition-refunds)
 
-![alt text](assets/chronicle.jpg)
+![alt text](assets/chronicle1.jpg)
 
 The first day of online classes, in March, turned administrators into amateurs and students like us into IT professionals. Our classes were full of microphone malfunctions, lagging technology, and disjointed discussions. Between logging in and out of Zoom, we seemed stuck in a perpetual transition — an unsettling state of limbo — as our rapidly transitioned classes grew less efficient and less educational.
 
