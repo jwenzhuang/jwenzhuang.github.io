@@ -89,6 +89,10 @@ html, body {
   text-decoration: underline;
 }
 
+#about-content {
+  display: none;
+}
+
 #content {
   height: 100vh;
   flex-grow: 1;
