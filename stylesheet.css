@@ -4,8 +4,7 @@ html, body {
   font-size: 20px;
   width: 100vw;
   height: 100vh;
-  line-height: 25px;
-  color: darkslategray;
+  line-height: 26px;
 }
 
 * {
@@ -24,21 +23,30 @@ html, body {
   flex-shrink: 0;
   display: flex;
   justify-content: space-between;
+  border-bottom: 0.5px solid #0000EE;
 
 }
 
 #header > * {
   width: 50%;
-  padding: 20px;
-  margin: -1px;
+  padding: 25px 50px 25px 50px ;
+
 }
 
 #about-btn, #index-btn {
   cursor: pointer;
 }
 
+#index-btn {
+  border-right: 0.5px solid #0000EE;
+}
+
 #about-btn:hover, #index-btn:hover {
   text-decoration: underline;
+}
+
+#about-content p {
+  margin-top: 0;
 }
 
 #body-container {
@@ -53,14 +61,18 @@ html, body {
   display: flex;
   flex-direction: column;
   max-width: 650px;
+  border-right: 0.5px solid #0000EE;
+
 }
 
 #index-body {
+  padding: 25px 50px 50px 50px;
+
   overflow-y: scroll;
-  padding-left: 20px;
-  padding-right: 20px;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  
 }
 
 #index-body::-webkit-scrollbar {
@@ -74,6 +86,7 @@ html, body {
 #index h1 {
   font-weight: normal;
   font-size: 1rem;
+  margin-top: 0;
 }
 
 .index-item {
@@ -81,12 +94,23 @@ html, body {
 }
 
 .index-item:hover {
+  color: #0000EE;
   text-decoration: underline;
 }
 
-.selected-index-item {
+.selected-index-item h1 {
   cursor: default;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #0000EE;
+  /* font-family: sans-serif; */
+
+
+}
+
+.selected-index-item p {
+  padding-left: 20px;
+  color: #0000EE;
+
 }
 
 #about-content {
@@ -96,13 +120,12 @@ html, body {
 #content {
   height: 100vh;
   flex-grow: 1;
-  padding-left: 10px;
-  padding-right: 10px;
   overflow: scroll;
 }
 
 .content-item {
   display: none;
+  padding: 25px 50px 50px 50px;
   max-width: 800px;
   margin: auto;
 }
@@ -110,12 +133,13 @@ html, body {
 #content h1 {
   font-size: 1.5rem;
   font-weight: normal;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 #content h2 {
   font-size: 1rem;
   font-weight: bold;
+
 }
 
 #content h3 {
@@ -126,7 +150,7 @@ html, body {
 a {
   font-style: italic;
   text-decoration: none;
-  color: unset;
+  color: #0000EE;
 }
 
 a:hover {
@@ -139,6 +163,8 @@ blockquote p {
 
 img {
   max-width: 100%;
+  width: 100%;
+  border-radius: 3px;
 }
 
 

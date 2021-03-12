@@ -58,13 +58,19 @@ function init(){
         datatype: "html"
     }).done(function(markdown){
         document.getElementById('index-body').innerHTML = md.render(markdown);
-
+        console.log(md.render(markdown));
+        let indexBody = document.getElementById('index-body');
         let h3Nodes = document.querySelectorAll('#index-body h3');
         for(let h3 of h3Nodes) {
             let contentID = h3.textContent;
             let indexItemHeader = h3.previousElementSibling;
-            indexItemHeader.setAttribute('id', contentID);
-            indexItemHeader.setAttribute('class', 'index-item');
+            let indexItemBlurb = h3.nextElementSibling;
+            let div = document.createElement('div');
+            div.setAttribute('id', contentID);
+            div.setAttribute('class', 'index-item');
+            div.append(indexItemHeader);
+            div.append(indexItemBlurb);
+            indexBody.append(div);
 
             getContent(contentID, 'content');
         }
