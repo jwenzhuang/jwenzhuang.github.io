@@ -23,7 +23,7 @@ html, body {
   flex-shrink: 0;
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.5px solid #0000EE;
+  border-bottom: 0.5px solid black;
 
 }
 
@@ -38,7 +38,7 @@ html, body {
 }
 
 #index-btn {
-  border-right: 0.5px solid #0000EE;
+  border-right: 0.5px solid black;
 }
 
 #about-btn:hover, #index-btn:hover {
@@ -61,7 +61,7 @@ html, body {
   display: flex;
   flex-direction: column;
   max-width: 650px;
-  border-right: 0.5px solid #0000EE;
+  border-right: 0.5px solid black;
 
 }
 
