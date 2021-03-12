@@ -1,6 +1,6 @@
 # *Horror Vacui*: The Poetics of Afrofuturism and the Missing Cosmos of the American Cinemascape
 
-> "What are the conditions under which the meanings attached to the idea of "going up" might become confused with those attached to the process of "going down"? How do notions of upward mobility become associated with physical orientations to the sky, to the stars, to the reaches of outer space? What might it mean to find oneself at the bottom - economically, socially, physically - just at the moment one appears to be traveling up, up, and away? Does it involve the process of crashing down from on high, or might highness itself be a “bottomless pit”?" 
+> What are the conditions under which the meanings attached to the idea of "going up" might become confused with those attached to the process of "going down"? How do notions of upward mobility become associated with physical orientations to the sky, to the stars, to the reaches of outer space? What might it mean to find oneself at the bottom - economically, socially, physically - just at the moment one appears to be traveling up, up, and away? Does it involve the process of crashing down from on high, or might highness itself be a “bottomless pit”?
 
 > *(Fawaz, Ramzi. “Space, That Bottomless Pit”, Callaloo Vol. 25, No. 4)*
 

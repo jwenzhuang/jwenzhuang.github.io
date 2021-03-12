@@ -1,6 +1,6 @@
 # *Sunless Sunset*: On the collected and the collective in Chris Marker and Penelope Umbrico.
 
-> “One day, I’ll have to put it all alone at the beginning of the film. He told me that if they don’t see happiness in the picture, at least they would see black.”
+>One day, I’ll have to put it all alone at the beginning of the film. He told me that if they don’t see happiness in the picture, at least they would see black.
 
 > — Chris Marker, Sans Soleil
 

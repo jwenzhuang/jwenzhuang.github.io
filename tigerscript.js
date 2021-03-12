@@ -1,5 +1,5 @@
 //markdown library
-const md = window.markdownit({html: true});
+const md = window.markdownit({html: true, typographer: true});
 
 //click handlers
 $("#container").on('click', '.index-item', function(e){
@@ -13,16 +13,16 @@ $("#container").on('click', '.index-item', function(e){
 $("#index-btn").click(function(e){
     resetContent();
     $('#index-body').children().not("h3").show();
-    $('#about-content').hide();
-    $(`#default-content`).show();
+    $('#_about-content').hide();
+    $(`#_default-content`).show();
 });
 
 $("#about-btn").click(function(e){
-    console.log($('#about-content'));
+    console.log($('#_about-content'));
     resetContent();
     $('#index-body').children().hide();
-    $('#about-content').show();
-    $(`#default-content`).show();
+    $('#_about-content').show();
+    $(`#_default-content`).show();
 });
 
 //clears content selection
@@ -45,7 +45,7 @@ function getContent(contentID, page){
         div.innerHTML = md.render(markdown);
         document.getElementById(page).append(div);
 
-        if(contentID == 'default'){
+        if(contentID == '_default'){
             div.style.display = 'block';
         }
     });
@@ -54,7 +54,7 @@ function getContent(contentID, page){
 //get index and all files
 function init(){
     $.ajax({
-        url: `content/index.md`,
+        url: `content/_index.md`,
         datatype: "html"
     }).done(function(markdown){
         document.getElementById('index-body').innerHTML = md.render(markdown);
@@ -74,8 +74,8 @@ function init(){
 
             getContent(contentID, 'content');
         }
-        getContent('about', 'index-body');
-        getContent('default', 'content');
+        getContent('_about', 'index-body');
+        getContent('_default', 'content');
     });
 }
 
