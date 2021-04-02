@@ -2,7 +2,7 @@
 
 # *Amid care work’s heightened visibility, a campaign to eliminate 24-hour shifts in one of America’s most progressive states*. Co-written with Sara Van-Horn
 
-[*Full text available here*](https://www.thenation.com/article/economy/home-care-attendants-workday/)
+[*Full text available here*.](https://www.thenation.com/article/economy/home-care-attendants-workday/)
 
 ![alt text](assets/24hours.jpg)
 
