@@ -2,6 +2,8 @@
 
 [*Full text available here*](https://www.thenation.com/article/economy/home-care-attendants-workday/)
 
+![alt text](assets/24hours.jpg)
+
 In 2014, Lai Yee Chan, a home attendant working in New York City, received an unexpected $200 check from her employer, the Chinese-American Planning Council (CPC). Too afraid to ask her employer why, Yee was informed by an accountant that this check was the extent of her overtime pay since 2007. 
  
 Chan felt incredibly angry, then fell into a state of hopelessness. For seven years, she had worked grueling 24-hour shifts with few breaks for meals and intermittent sleep. “Throughout the 24 hours, my nervous system started to feel like it was breaking down,” Chan told The Nation during a moment of rest while on a 12-hour shift. “How is this possible in a place as progressive as New York? It should be considered a human rights violation.” Eight years later, Chan still curbs her extreme insomnia with sleeping pills.
