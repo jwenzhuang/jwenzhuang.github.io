@@ -1,6 +1,6 @@
 # 03.26.21 for *The Nation*
 ### 24hours
-xyxyxyxxyxyyx
+I wrote about the home-care attendants and organizers behind the "Ain't I a Woman?" campaign and the fight to end the 24-hour workday in New York, where there has been a long history of exploitation both of workers (in this case immigrant women care workers) wage and of their time. 
 
 # 07.09.20 for *Los Angeles Review of Books*
 ### larb
