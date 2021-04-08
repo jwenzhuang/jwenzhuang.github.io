@@ -1,11 +1,9 @@
-I work on editorial initiatives at the [Vera List Center for Art & Politics](https://veralistcenter.org/) at The New School and manage editorial production at [Ugly Duckling Presse](https://uglyducklingpresse.org). I hold a BFA from Rhode Island School of Design and a MA from Brown University. My research interests are within the fields of critical pedagogy studies, media studies, and aesthetics. I'm particularly interested in how labor and autonomy, how play and restraint, are, individually and simultaneously, enacted and denied within certain structures. 
+I'm a freelance writer, editor, and book worker. I studied American Studies at Brown and film and photography at RISD. I work within the fields of critical pedagogy studies, aesthetics, and radical publishing. My research is particularly interested in how labor and autonomy, how play and restraint, are individually and simultaneously enacted and denied within certain systems and structures. I organize with workers and students around [debt](https://debtcollective.org/).   
 
 For fun, I try and collect things on my [Are.na](https://www.are.na/wen-z). And watch movies that I write about on my blog, [Code Unknown](https://code-unknown.com/). There's also the newsletter I run, [A&nbsp;Fountain](https://afountain.substack.com/).
 
 jwenzhuang@gmail.com
 
-CV available upon request. 
-
 <p style="text-align: center;">¤</p>
 
-Website design by [Theïa F](https://rangement.github.io) and [Tiger D](https://www.tiger.exposed).
+Website design by [Theïa Flynn](https://rangement.github.io) and [Tiger Dingsun](https://www.tiger.exposed).
