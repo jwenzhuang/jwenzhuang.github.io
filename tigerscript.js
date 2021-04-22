@@ -18,7 +18,6 @@ $("#index-btn").click(function(e){
 });
 
 $("#about-btn").click(function(e){
-    console.log($('#about-content'));
     resetContent();
     $('#index-body').children().hide();
     $('#about-content').show();
@@ -58,7 +57,6 @@ function init(){
         datatype: "html"
     }).done(function(markdown){
         document.getElementById('index-body').innerHTML = md.render(markdown);
-        console.log(md.render(markdown));
         let indexBody = document.getElementById('index-body');
         let h3Nodes = document.querySelectorAll('#index-body h3');
         for(let h3 of h3Nodes) {
