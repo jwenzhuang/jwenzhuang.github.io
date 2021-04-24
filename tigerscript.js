@@ -6,8 +6,12 @@ $("#container").on('click', '.index-item', function(e){
     let id = $(this).attr('id');
     resetContent();
     $(this).addClass('selected-index-item');
-    $(`#${id}-content`).show();
     $('#content').scrollTop(0);
+    if($(`#${id}-content`).length === 0){
+        getPost(id);
+    } else {
+        $(`#${id}-content`).show();
+    }
 });
 
 $("#index-btn").click(function(e){
@@ -50,27 +54,52 @@ function getContent(contentID, page){
     });
 }
 
+//get json files (posts)
+function getPost(contentID){
+    $.ajax({
+        url: `content/posts/${contentID}.json`,
+        datatype: "json"
+    }).done(function(obj) {
+        let div = document.createElement("div");
+        div.setAttribute('id', `${contentID}-content`);
+        div.setAttribute('class', "content-item");
+
+        if(obj.title){
+            let title = document.createElement("h1");
+            title.innerHTML = md.renderInline(obj.title);
+            div.append(title);
+        }
+
+        let body = document.createElement("div");
+        body.innerHTML = md.render(obj.body);
+        div.append(body);
+        $("#content").append(div);
+        $(`#${contentID}-content`).show();
+    });
+}
+
 //get index and all files
 function init(){
     $.ajax({
-        url: `content/index.md`,
-        datatype: "html"
-    }).done(function(markdown){
-        document.getElementById('index-body').innerHTML = md.render(markdown);
+        url: `content/index.json`,
+        datatype: "json"
+    }).done(function(index_object){
         let indexBody = document.getElementById('index-body');
-        let h3Nodes = document.querySelectorAll('#index-body h3');
-        for(let h3 of h3Nodes) {
-            let contentID = h3.textContent;
-            let indexItemHeader = h3.previousElementSibling;
-            let indexItemBlurb = h3.nextElementSibling;
+        for(let post of index_object.posts) {
+            let contentID = post.post_id;
             let div = document.createElement('div');
             div.setAttribute('id', contentID);
             div.setAttribute('class', 'index-item');
-            div.append(indexItemHeader);
-            div.append(indexItemBlurb);
-            indexBody.append(div);
 
-            getContent(contentID, 'content');
+            let title = document.createElement('h1');
+            title.innerHTML = md.renderInline(post.title);
+            div.append(title);
+
+            let summary = document.createElement('p');
+            summary.innerHTML = md.renderInline(post.summary);
+            div.append(summary);
+
+            indexBody.append(div);
         }
         getContent('about', 'index-body');
         getContent('default', 'content');

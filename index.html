@@ -6,6 +6,7 @@
         <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=10.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/10.0.0/markdown-it.min.js"></script>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <link rel="icon" href="wen.ico" type="image/x-icon" />
         <link href="stylesheet.css" rel="stylesheet" type="text/css">
     </head>
@@ -24,5 +25,16 @@
     </body>
     
     <script src="tigerscript.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
 </html>
 

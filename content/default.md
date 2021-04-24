@@ -1,3 +1,3 @@
-![alt text](assets/mirror.jpg)
+![](/assets/mirror.jpg)
 
-![alt text](assets/hands.jpg)
+![](/assets/hands.jpg)

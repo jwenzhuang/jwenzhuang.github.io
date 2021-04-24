@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: jwenzhuang/jwenzhuang.github.io
+  branch: master
+publish_mode: editorial_workflow
+media_folder: "assets"
+
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "content/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{post_id}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    identifier_field: post_id
+    extension: json
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "markdown", buttons: ["bold", "italic", "link"], editor_components: [], required: false}
+      - {label: "post id", name: "post_id", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Index Page"
+        name: "index"
+        file: "content/index.json"
+        fields:
+          - label: Posts
+            name: posts
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: markdown}
+              - {label: Post Id, name: post_id, widget: relation, collection: "posts", value_field: "post_id", search_fields: ["post_id"]}
+              - {label: Summary, name: summary, widget: markdown}
+      - label: "About Page"
+        name: "about"
+        file: "content/about.md"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Default Page"
+        name: "default"
+        file: "content/default.md"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}

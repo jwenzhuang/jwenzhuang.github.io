@@ -24,7 +24,6 @@ html, body {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px solid black;
-
 }
 
 #header > * {
@@ -57,16 +56,12 @@ html, body {
   flex-direction: column;
   max-width: 650px;
   border-right: 0.5px solid black;
-
 }
 
 #index-body {
   padding: 25px 50px 50px 50px;
-
   overflow-y: scroll;
   -ms-overflow-style: none;
-
-  
 }
 
 #index h3 {
@@ -156,6 +151,11 @@ img {
 
 
 @media only screen and (max-width: 720px) {
+  html, body {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
   #header > * {
     padding: 15px 20px;
   }
